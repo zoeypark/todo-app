@@ -1,0 +1,22 @@
+.todos {
+    height: 666px;
+    border: 1px solid black; 
+    display: flex;
+    flex-direction: column;
+}
+
+.todo__input {
+    border: 1px solid blue;
+    border-radius: 50px;
+    margin: 30px 20px;
+    padding: 10px 15px;
+}
+
+.todo__addBtn {
+    height: 20px;
+}
+
+.todo__addInput {
+    display: flex;
+    flex-direction: column;
+}

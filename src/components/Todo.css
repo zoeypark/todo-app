@@ -1,0 +1,14 @@
+.todo__wrapper {
+    display: flex;
+    border: 1px solid black;
+    /* height: 60px; */
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.todo__checkBox {
+    margin: 0px 10px;
+}
+
+
+
