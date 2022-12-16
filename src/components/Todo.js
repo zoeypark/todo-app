@@ -3,7 +3,13 @@ import styled from 'styled-components';
 import './Todo.css';
 
 export const Todo = ({todo}) => {
-    console.log(todo);
+
+    // const handleDelete = () => {
+    //     todos[2]
+    // }
+
+    // console.log(todo);
+
     const parsedDate = new Date(todo.createdAt).toLocaleDateString('ko-kr');
     return (
         <li className="todo__wrapper">

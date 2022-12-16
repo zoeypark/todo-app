@@ -15,9 +15,9 @@ export const Todos = ()=> {
         setIsTodo(e.target.value);
     }
 
-    const handleClick = (e) => {
+    const handleAdd = (e) => {
         const newTodo = {
-            id: dummyTodos.length,
+            id: todos.length+1,
             content:
                 isTodo,
             createdAt: new Date(Date.now()).toLocaleDateString('ko-kr')
@@ -36,13 +36,13 @@ export const Todos = ()=> {
             onChange={handleChange}
             value={isTodo}
           ></input>
-          <button className="todo__addBtn" onClick={handleClick}>
+          <button className="todo__addBtn" onClick={handleAdd}>
             +
           </button>
         </div>
         <ul className="todos">
           {todos.map((el) => {
-            return <Todo key={el.id} todo={el} />;
+            return <Todo key={el.id} todo={el}/>;
           })}
         </ul>
       </div>
