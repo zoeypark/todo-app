@@ -3,11 +3,36 @@
     border: 1px solid black;
     /* height: 60px; */
     box-sizing: border-box;
-    justify-content: space-between;
+    
 }
 
 .todo__checkBox {
     margin: 0px 10px;
+}
+
+.todo__content {
+    flex: 1 1 auto;
+}
+
+.todo__icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.deleteWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.editWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 5px;
 }
 
 

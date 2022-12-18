@@ -1,15 +1,28 @@
+@font-face {
+    font-family: "gowun";
+    src: url("../fonts/GowunBatang-Regular.ttf");
+  }
+
 .todos {
     height: 666px;
-    border: 1px solid black; 
+    /* border: 1px solid black;  */
     display: flex;
     flex-direction: column;
 }
 
 .todo__input {
-    border: 1px solid blue;
+    border: 1px solid rgba(223,225,229,0);
     border-radius: 50px;
-    margin: 30px 20px;
+    margin: 30px 10px;
     padding: 10px 15px;
+    width: 350px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    font-family: 'gowun';
+}
+
+.todo__input:focus {
+    outline: none;
+    box-shadow: 0 2px 8px 1px rgb(64 60 67 / 24%);
 }
 
 .todo__addBtn {
@@ -18,5 +31,62 @@
 
 .todo__addInput {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
+
+.todo__wrapper {
+    display: flex;
+    border: 1px solid rgb(207, 207, 207);
+    /* height: 60px; */
+    box-sizing: border-box;
+    margin: 5px 0px;
+
+    
+}
+
+.todo__checkBox {
+    margin: 0px 10px;
+}
+
+.todo__content {
+    flex: 1 1 auto;
+    color: grey;
+}
+
+.todo__message {
+    font-family: 'gowun';
+}
+
+.todo__date {
+    font-family: 'gowun';
+    font-size: 12px;
+}
+
+.todo__icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.deleteWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.editWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+.plusIconWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
